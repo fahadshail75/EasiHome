@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Phone, Shield, Award, Clock, CheckCircle, MapPin } from 'lucide-react';
+import { ArrowRight, Phone, Shield, Award, Clock, CheckCircle, MapPin, Palette, Box } from 'lucide-react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import ProcessSteps from '../components/ProcessSteps';
@@ -36,11 +36,11 @@ const Home = () => {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <Hero
-        title="Tech‑enabled Construction & Home Services in Lucknow"
-        subtitle="Build better, faster, and stress‑free"
-        description="From concept to handover—managed end‑to‑end by experts with real‑time updates and transparent milestones."
-        primaryCTA="Book Free Consultation"
-        secondaryCTA="Explore Services"
+        title="Transform Your Space Into Art"
+        subtitle="Revolutionizing Spaces with Art & Design"
+        description="We bring creativity to life through innovative layouts, harmonious color schemes, and cutting-edge design technologies. Our expert team creates functional yet artistic interiors that reflect your unique style and enhance your daily living experience."
+        primaryCTA="Get Started"
+        secondaryCTA="View Work"
         primaryAction={handlePrimaryAction}
         secondaryAction={handleSecondaryAction}
         showTrustBadges={true}
@@ -53,40 +53,40 @@ const Home = () => {
             {...viewportAnimation}
             className="text-center"
           >
-            <p className="text-surface-600 mb-8 text-lg">Trusted by 500+ families across Lucknow</p>
+            <p className="text-surface-600 mb-8 text-lg">Trusted by 500+ families across Lucknow for exceptional interior design</p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-primaryTint rounded-2xl flex items-center justify-center mx-auto mb-3">
-                  <Shield className="text-brand-primary" size={24} />
+                  <Palette className="text-brand-primary" size={24} />
                 </div>
-                <h3 className="font-semibold text-surface-900 mb-1">Licensed & Insured</h3>
-                <p className="text-sm text-surface-600">Fully certified contractors</p>
+                <h3 className="font-semibold text-surface-900 mb-1">Expert Designers</h3>
+                <p className="text-sm text-surface-600">Professional interior designers</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-primaryTint rounded-2xl flex items-center justify-center mx-auto mb-3">
-                  <Award className="text-brand-primary" size={24} />
+                  <Box className="text-brand-primary" size={24} />
                 </div>
-                <h3 className="font-semibold text-surface-900 mb-1">Award Winning</h3>
-                <p className="text-sm text-surface-600">Industry recognition</p>
+                <h3 className="font-semibold text-surface-900 mb-1">3D Visualization</h3>
+                <p className="text-sm text-surface-600">Realistic 3D renders</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-primaryTint rounded-2xl flex items-center justify-center mx-auto mb-3">
                   <Clock className="text-brand-primary" size={24} />
                 </div>
-                <h3 className="font-semibold text-surface-900 mb-1">On-Time Delivery</h3>
-                <p className="text-sm text-surface-600">98% completion rate</p>
+                <h3 className="font-semibold text-surface-900 mb-1">Timely Execution</h3>
+                <p className="text-sm text-surface-600">Projects completed on schedule</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-primaryTint rounded-2xl flex items-center justify-center mx-auto mb-3">
-                  <CheckCircle className="text-brand-primary" size={24} />
+                  <Award className="text-brand-primary" size={24} />
                 </div>
                 <h3 className="font-semibold text-surface-900 mb-1">Quality Assured</h3>
-                <p className="text-sm text-surface-600">Lifetime warranty</p>
+                <p className="text-sm text-surface-600">Premium materials & finishes</p>
               </div>
             </div>
 
@@ -184,11 +184,11 @@ const Home = () => {
             {...viewportAnimation}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-surface-900 mb-3 sm:mb-4">
-              Our Services
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-mono font-bold text-surface-900 mb-3 sm:mb-4">
+              Transform Every Room with Expert Design
             </h2>
-            <p className="text-base sm:text-lg text-surface-600 max-w-2xl mx-auto px-4 sm:px-0">
-              From construction to interiors, we handle every aspect of your home project with expertise and care.
+            <p className="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto px-4 sm:px-0">
+              From concept to completion, we deliver comprehensive design services that blend innovative layouts with stunning color harmonies. Experience the perfect balance of functionality and artistry in every space we create.
             </p>
           </motion.div>
 
@@ -227,12 +227,11 @@ const Home = () => {
               <Award size={14} />
               <span>Featured Projects</span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-surface-900 mb-4">
-              Our Recent Projects
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold text-surface-900 mb-4">
+              Spaces That Tell Your Story
             </h2>
-            <p className="text-lg text-surface-600 max-w-3xl mx-auto">
-              Discover our portfolio of completed projects showcasing exceptional craftsmanship, 
-              innovative design, and client satisfaction across Lucknow.
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Every project we complete reflects our commitment to revolutionary design. From intimate residential spaces to dynamic commercial environments, discover how we transform ordinary rooms into extraordinary experiences through thoughtful design and meticulous attention to detail.
             </p>
           </motion.div>
 
@@ -247,18 +246,18 @@ const Home = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300">
                 <div className="text-3xl font-bold text-brand-primary mb-2">500+</div>
-                <div className="text-sm text-surface-600 font-medium">Completed Projects</div>
+                <div className="text-sm text-surface-600 font-medium">Interior Projects</div>
               </div>
               <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300">
-                <div className="text-3xl font-bold text-brand-primary mb-2">98%</div>
+                <div className="text-3xl font-bold text-brand-primary mb-2">99%</div>
                 <div className="text-sm text-surface-600 font-medium">Client Satisfaction</div>
               </div>
               <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300">
-                <div className="text-3xl font-bold text-brand-primary mb-2">15+</div>
+                <div className="text-3xl font-bold text-brand-primary mb-2">8+</div>
                 <div className="text-sm text-surface-600 font-medium">Years Experience</div>
               </div>
               <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300">
-                <div className="text-3xl font-bold text-brand-primary mb-2">4.8★</div>
+                <div className="text-3xl font-bold text-brand-primary mb-2">4.9★</div>
                 <div className="text-sm text-surface-600 font-medium">Average Rating</div>
               </div>
             </div>
@@ -269,13 +268,12 @@ const Home = () => {
             {...viewportAnimation}
             className="text-center"
           >
-            <div className="bg-gradient-to-r from-brand-primary to-brand-primary/90 rounded-2xl p-8 shadow-xl max-w-4xl mx-auto text-white">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Ready to Start Your Dream Project?
+            <div className="bg-gradient-to-r from-brand-primary to-brand-primary/90 rounded-2xl p-8 shadow-xl max-w-4xl mx-auto text-black">
+              <h3 className="text-2xl md:text-3xl font-mono font-bold mb-4">
+                Ready to Transform Your Space?
               </h3>
-              <p className="text-brand-primaryTint mb-6 text-lg max-w-2xl mx-auto">
-                Join hundreds of satisfied customers who trusted us with their construction needs. 
-                Get a free consultation and transparent quote today.
+              <p className="text-black mb-6 text-lg max-w-2xl mx-auto">
+                Let us revolutionize your space with innovative design technologies and artistic flair. From initial concept to final touches, we create interiors that perfectly blend functionality with stunning visual appeal.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -291,7 +289,7 @@ const Home = () => {
                   variant="outline"
                   size="lg"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                  className="border-black/30 text-black hover:bg-black/10 backdrop-blur-sm"
                 >
                   View All Projects
                 </Button>
@@ -303,86 +301,42 @@ const Home = () => {
 
       {/* Stats Section */}
       <StatsSection />
-      
-      {/* Testimonials */}
-      <TestimonialCarousel />
-      {/* Promo Banner */}
-      <section className="section bg-gradient-to-r from-brand-primary via-brand-primaryDark to-brand-steel text-white relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-50" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }} />
 
-        <div className="container-custom relative z-10">
-          <motion.div
-            {...viewportAnimation}
-            className="text-center"
-          >
-            {/* Offer Badge */}
-            <motion.div
-              className="inline-flex items-center gap-2 bg-brand-yellow text-brand-primary px-6 py-3 rounded-full font-bold text-lg mb-6"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              <span className="text-2xl">🎉</span>
-              Limited Time Offer
-              <span className="bg-brand-primary text-white px-2 py-1 rounded-full text-xs">
-                Ends Soon
-              </span>
-            </motion.div>
-
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              Save Big on Your Dream Project
+      {/* Trusted by Thousands */}
+      <section className="section bg-gradient-to-r from-brand-primary to-brand-primaryDark text-black">
+        <div className="container-custom">
+          <motion.div {...viewportAnimation} className="text-center">
+            <h2 className="text-3xl md:text-4xl font-mono font-bold mb-6">
+              Join Thousands Who Love Their New Spaces
             </h2>
-
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-10">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-brand-yellow mb-2">Up to 18% OFF</div>
-                <div className="text-xl font-semibold mb-2">Construction Projects</div>
-                <p className="text-white/80">Complete home construction with premium materials and expert craftsmanship</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-brand-yellow mb-2">Up to 12% OFF</div>
-                <div className="text-xl font-semibold mb-2">Interior Design</div>
-                <p className="text-white/80">Transform your space with modern design solutions and premium finishes</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                variant="ghost"
-                size="lg"
-                icon={Phone}
-                onClick={handlePrimaryAction}
-                className="bg-white text-brand-primary hover:bg-surface-100 shadow-xl"
-              >
-                Claim Your Discount Now
-              </Button>
-              <Button
-                variant="ghost"
-                size="lg"
-                icon={ArrowRight}
-                iconPosition="right"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20"
-              >
-                View All Offers
-              </Button>
-            </div>
-
-            <p className="text-white/70 text-sm mt-6">
-              * Offer valid for new projects booked before end of this month. Terms and conditions apply.
+            <p className="text-xl text-black mb-12 max-w-3xl mx-auto">
+              Over 500 families across Lucknow have discovered the joy of living in beautifully designed spaces. From innovative layouts to stunning color harmonies, ORPHIC ART REVOLUTION brings your vision to life with unmatched attention to detail.
             </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">500+</div>
+                <div className="text-black">Happy Families</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">1000+</div>
+                <div className="text-black">Rooms Designed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">99%</div>
+                <div className="text-black">Satisfaction Rate</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">15+</div>
+                <div className="text-black">Areas Served</div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
+      {/* Testimonials */}
+      <TestimonialCarousel />
       
 
       {/* Contact Form Section */}
@@ -391,19 +345,18 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <motion.div {...viewportAnimation}>
               <div className="lg:sticky lg:top-8">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-surface-900 mb-6">
-                  Ready to Start Your Dream Project?
+                <h2 className="text-3xl md:text-4xl font-mono font-bold text-surface-900 mb-6">
+                  Let's Create Your Dream Space Together
                 </h2>
-                <p className="text-lg text-surface-600 mb-8">
-                  Get a free consultation and detailed quote for your construction or renovation project.
-                  Our experts will guide you through every step of the process.
+                <p className="text-lg text-gray-700 mb-8">
+                  Ready to experience the magic of revolutionary design? Get your free consultation and discover how we can transform your space with innovative layouts, beautiful color harmonies, and cutting-edge design technologies.
                 </p>
 
                 {/* Process Steps */}
                 <div className="space-y-6 mb-8">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold">1</span>
+                      <span className="text-black font-bold">1</span>
                     </div>
                     <div>
                       <h3 className="font-semibold text-surface-900 mb-1">Free Consultation</h3>
@@ -413,7 +366,7 @@ const Home = () => {
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold">2</span>
+                      <span className="text-black font-bold">2</span>
                     </div>
                     <div>
                       <h3 className="font-semibold text-surface-900 mb-1">Detailed Planning</h3>
@@ -423,7 +376,7 @@ const Home = () => {
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold">3</span>
+                      <span className="text-black font-bold">3</span>
                     </div>
                     <div>
                       <h3 className="font-semibold text-surface-900 mb-1">Transparent Pricing</h3>
@@ -434,15 +387,15 @@ const Home = () => {
 
                 {/* Trust Indicators */}
                 <div className="bg-white rounded-2xl p-6 shadow-soft">
-                  <h3 className="font-semibold text-surface-900 mb-4">Why Choose EasiHome?</h3>
+                  <h3 className="font-semibold text-surface-900 mb-4">Why Choose ORPHIC ART REVOLUTION?</h3>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="flex items-center gap-2">
                       <CheckCircle size={16} className="text-brand-primary" />
-                      <span>Licensed & Insured</span>
+                      <span>3D Visualization</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle size={16} className="text-brand-primary" />
-                      <span>5-Year Warranty</span>
+                      <span>Space Planning</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle size={16} className="text-brand-primary" />
@@ -450,7 +403,7 @@ const Home = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle size={16} className="text-brand-primary" />
-                      <span>Quality Materials</span>
+                      <span>Quality Assurance</span>
                     </div>
                   </div>
                 </div>

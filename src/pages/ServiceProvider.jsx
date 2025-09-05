@@ -6,7 +6,7 @@ const ServiceProvider = () => {
     <div>
       <PageHeader
         title="Join as Service Provider"
-        subtitle="Partner with EasiHome"
+        subtitle="Partner with ORPHIC ART REVOLUTION PRIVATE LIMITED"
         description="Connect with verified professionals including masons, electricians, plumbers, painters, and carpenters."
         breadcrumbs={[{ name: "Service Provider" }]}
         primaryCTA="Join Our Network"
@@ -19,7 +19,7 @@ const ServiceProvider = () => {
           <div className="max-w-4xl mx-auto">
             <ContactForm 
               title="Become a Service Provider"
-              subtitle="Join our network of verified professionals and grow your business with EasiHome"
+              subtitle="Join our network of verified professionals and grow your business with ORPHIC ART REVOLUTION PRIVATE LIMITED"
             />
           </div>
         </div>

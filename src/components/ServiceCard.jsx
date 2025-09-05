@@ -37,10 +37,6 @@ const ServiceCard = ({
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-brand-primary to-brand-primaryDark rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <IconComponent size={20} className="text-white sm:w-6 sm:h-6 md:w-7 md:h-7" />
               </div>
-              {/* Floating dot */}
-              <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-brand-yellow rounded-full flex items-center justify-center">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-brand-primary rounded-full"></div>
-              </div>
             </div>
 
             {showDiscount && service.discount && (
@@ -55,10 +51,10 @@ const ServiceCard = ({
 
           {/* Content */}
           <div className="flex-1">
-            <h3 className="text-lg sm:text-xl font-heading font-bold text-surface-900 mb-2 sm:mb-3 group-hover:text-brand-primary transition-colors">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-mono font-bold text-surface-900 mb-3 sm:mb-4 group-hover:text-brand-primary transition-colors leading-tight">
               {service.name}
             </h3>
-            <p className="text-sm sm:text-base text-surface-600 leading-relaxed mb-4 sm:mb-6">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
               {service.description}
             </p>
           </div>

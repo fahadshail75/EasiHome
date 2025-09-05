@@ -1,12 +1,68 @@
-# React + Vite
+# ORPHIC ART REVOLUTION PRIVATE LIMITED
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for ORPHIC ART REVOLUTION PRIVATE LIMITED - a multidisciplinary design studio based in Lucknow specializing in 3D design, animation, brand identity, engineering design, graphic design, and comprehensive interior solutions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Clean, professional design with smooth animations
+- **Responsive**: Fully responsive across all devices
+- **Fast Performance**: Built with Vite for optimal performance
+- **SEO Optimized**: Meta tags and structured content for search engines
+- **Accessibility**: WCAG compliant with proper semantic HTML
 
-## Expanding the ESLint configuration
+## Services
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 3D Design & Visualization
+- Animation & Motion Graphics
+- Brand Identity & Design
+- Engineering Design & CAD
+- Graphic Design
+- Interior Design & Styling
+
+## Tech Stack
+
+- **Frontend**: React 19
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Netlify
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── layouts/       # Layout components
+├── routes/        # Routing configuration
+├── utils/         # Utilities and constants
+└── assets/        # Static assets
+```
+
+## Contact
+
+**ORPHIC ART REVOLUTION PRIVATE LIMITED**
+- Email: contact@oarpl.studio
+- Phone: +91 894 894 5757
+- Location: Lucknow, Uttar Pradesh
+
+## License
+
+© 2025 ORPHIC ART REVOLUTION PRIVATE LIMITED. All rights reserved.

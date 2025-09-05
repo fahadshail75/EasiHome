@@ -7,21 +7,21 @@ import { viewportAnimation, staggerContainer, staggerItem } from '../utils/anima
 const InteriorDesign = () => {
   const designStyles = [
     {
-      name: "Modern Contemporary",
-      description: "Clean lines, minimalist approach with functional furniture and neutral colors.",
-      features: ["Open floor plans", "Neutral color palette", "Functional furniture", "Natural lighting"],
+      name: "Contemporary Luxury",
+      description: "Sophisticated spaces with premium materials, elegant finishes, and modern aesthetics.",
+      features: ["Premium materials", "Elegant finishes", "Modern aesthetics", "Luxury fixtures"],
       image: "bg-gradient-to-br from-gray-400 to-gray-600"
     },
     {
-      name: "Classic Traditional",
-      description: "Timeless elegance with rich colors, ornate details, and luxurious materials.",
-      features: ["Rich wood finishes", "Ornate details", "Warm color schemes", "Traditional patterns"],
+      name: "Traditional Elegance",
+      description: "Timeless designs with rich textures, warm colors, and classic furniture pieces.",
+      features: ["Rich textures", "Warm color palettes", "Classic furniture", "Ornate details"],
       image: "bg-gradient-to-br from-amber-400 to-amber-600"
     },
     {
-      name: "Scandinavian Minimal",
-      description: "Light, airy spaces with natural materials and cozy, functional design.",
-      features: ["Light wood tones", "White & light colors", "Cozy textiles", "Functional design"],
+      name: "Modern Minimalist",
+      description: "Clean, uncluttered spaces with functional design and neutral color schemes.",
+      features: ["Clean lines", "Functional design", "Neutral colors", "Uncluttered spaces"],
       image: "bg-gradient-to-br from-blue-400 to-blue-600"
     }
   ];
@@ -29,25 +29,25 @@ const InteriorDesign = () => {
   const designProcess = [
     {
       step: 1,
-      title: "Consultation & Brief",
-      description: "Understanding your lifestyle, preferences, and requirements",
+      title: "Discovery & Consultation",
+      description: "Free consultation to understand your vision, lifestyle, and space requirements",
       icon: Eye
     },
     {
       step: 2,
-      title: "Concept Development",
-      description: "Creating initial design concepts and mood boards",
+      title: "Design & Planning",
+      description: "Space planning, concept development, and material selection with 3D visualization",
       icon: Lightbulb
     },
     {
       step: 3,
-      title: "3D Visualization",
-      description: "Detailed 3D renders to visualize the final design",
+      title: "3D Visualization & Approval",
+      description: "Detailed 3D renders and virtual tours for design approval before execution",
       icon: Ruler
     },
     {
       step: 4,
-      title: "Execution & Styling",
+      title: "Execution & Delivery",
       description: "Project management and final styling touches",
       icon: Home
     }
@@ -57,12 +57,11 @@ const InteriorDesign = () => {
     <div>
       <PageHeader
         title="Interior Design Services"
-        subtitle="Creating Excellent Interiors"
-        description="Transform your space with our expert interior design services. From concept to completion, we create beautiful, functional interiors that reflect your personality."
-        breadcrumbs={[{ name: "Services", href: "/#services" }, { name: "Interior Design" }]}
+        subtitle="End-to-End Interior Solutions"
+        description="Comprehensive interior design services from space planning to execution management. We handle everything from concept development to final styling with 3D visualization and project oversight."
+        breadcrumbs={[{ name: "Interior Design" }]}
         primaryCTA="Get Design Quote"
         secondaryCTA="View Portfolio"
-        discount="Up to 12% Off"
         variant="service"
       />
 
@@ -94,7 +93,7 @@ const InteriorDesign = () => {
                   <div className={`h-48 ${style.image} relative`}>
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
                     <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="text-xl font-bold text-white mb-1">{style.name}</h3>
+                      <h3 className="text-xl font-bold text-black mb-1">{style.name}</h3>
                     </div>
                   </div>
                   <div className="p-6">
@@ -141,7 +140,7 @@ const InteriorDesign = () => {
               <motion.div key={index} variants={staggerItem}>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-brand-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <process.icon size={28} className="text-white" />
+                    <process.icon size={28} className="text-black" />
                   </div>
                   <div className="text-sm text-brand-primary font-semibold mb-2">Step {process.step}</div>
                   <h3 className="text-xl font-semibold text-surface-900 mb-3">{process.title}</h3>
@@ -176,14 +175,14 @@ const InteriorDesign = () => {
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {[
-              "Space Planning & Layout",
-              "3D Visualization & Renders",
-              "Material & Color Selection",
-              "Furniture & Decor Sourcing",
-              "Lighting Design",
-              "Project Management",
-              "Installation Supervision",
-              "Final Styling & Setup"
+              "Space Planning & Concept Development",
+              "Interior Styling & Furniture Selection",
+              "Colour & Material Consultation",
+              "Lighting Design & Custom Cabinetry",
+              "3D Modelling, Rendering & Visualization",
+              "Project Management & Execution",
+              "Quality Assurance & Timeline Tracking",
+              "Post-Completion Support"
             ].map((service, index) => (
               <motion.div key={index} variants={staggerItem}>
                 <div className="flex items-center gap-3 p-4 bg-surface-50 rounded-xl">

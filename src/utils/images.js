@@ -1,20 +1,20 @@
 // Hero Section Images
 export const heroImages = {
   featuredProject: {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-    alt: "Modern luxury home construction by EasiHome",
-    title: "Premium Villa Construction"
+    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+    alt: "Luxurious interior design by ORPHIC ART REVOLUTION PRIVATE LIMITED",
+    title: "Premium Interior Design"
   },
   alternatives: [
     {
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
-      alt: "Contemporary home design by EasiHome",
-      title: "Contemporary Home Design"
+      src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      alt: "Modern living room interior design by ORPHIC ART REVOLUTION PRIVATE LIMITED",
+      title: "Contemporary Living Spaces"
     },
     {
-      src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
-      alt: "Luxury residential construction",
-      title: "Luxury Residential Project"
+      src: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4",
+      alt: "3D visualization and space planning by ORPHIC ART REVOLUTION PRIVATE LIMITED",
+      title: "3D Design & Visualization"
     }
   ]
 };
@@ -91,65 +91,65 @@ export const getHeroHeight = (navbarHeight = "5rem") => {
 export const projectImages = {
   completed: [
     {
-      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      alt: "Modern villa exterior at dusk",
-      category: "Residential Villa",
+      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+      alt: "Luxurious Living Room Interior Design",
+      category: "Interior Design",
       location: "Gomti Nagar, Lucknow",
       year: "2024",
     },
     {
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
-      alt: "Contemporary living room with warm lighting",
-      category: "Modern Living Room",
+      src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      alt: "Modern Kitchen with Custom Cabinetry",
+      category: "Space Planning",
       location: "Hazratganj, Lucknow",
       year: "2024",
     },
     {
-      src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
-      alt: "Luxury residential facade with landscaping",
-      category: "Luxury Facade",
+      src: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4",
+      alt: "3D Visualization of Bedroom Design",
+      category: "3D Visualization",
       location: "Indira Nagar, Lucknow",
       year: "2023",
     },
     {
       src: "https://images.unsplash.com/photo-1523217582562-09d0def993a6",
-      alt: "Minimal kitchen interior with island",
-      category: "Minimal Kitchen",
+      alt: "Contemporary Kitchen Design with Island",
+      category: "Interior Design",
       location: "Aliganj, Lucknow",
       year: "2023",
     },
     {
       src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      alt: "Elegant bedroom with natural light",
-      category: "Bright Bedroom",
+      alt: "Master Bedroom Interior Styling",
+      category: "Interior Styling",
       location: "Mahanagar, Lucknow",
       year: "2022",
     },
     {
       src: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c88a",
-      alt: "Modern bathroom with marble finishes",
-      category: "Marble Bathroom",
+      alt: "Luxury Bathroom Interior Design",
+      category: "Interior Design",
       location: "Gomti Nagar Ext., Lucknow",
       year: "2022",
     },
     {
       src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
-      alt: "Luxury duplex with modern architecture",
-      category: "Duplex Construction",
+      alt: "Modern Duplex Space Planning",
+      category: "Space Planning",
       location: "Rajajipuram, Lucknow",
       year: "2024",
     },
     {
       src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-      alt: "Contemporary kitchen with wood accents",
-      category: "Kitchen Renovation",
+      alt: "Kitchen Design with Custom Millwork",
+      category: "Custom Millwork",
       location: "Chinhat, Lucknow",
       year: "2024",
     },
     {
       src: "https://images.unsplash.com/photo-1571055107559-3e67626fa8be",
-      alt: "Modern office interior design",
-      category: "Office Interior",
+      alt: "Modern Office Interior Styling",
+      category: "Interior Styling",
       location: "Hazratganj, Lucknow",
       year: "2023",
     },

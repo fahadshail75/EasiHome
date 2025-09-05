@@ -406,7 +406,7 @@ const Construction = () => {
               <motion.div key={index} variants={staggerItem}>
                 <div className="bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition-all duration-300 text-center h-full">
                   <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-primaryDark rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <qa.icon size={28} className="text-white" />
+                    <qa.icon size={28} className="text-black" />
                   </div>
                   <h3 className="text-xl font-bold text-surface-900 mb-3">{qa.title}</h3>
                   <p className="text-surface-600 mb-4">{qa.description}</p>
@@ -429,7 +429,7 @@ const Construction = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-surface-900 mb-4">
-              Why Choose EasiHome for Construction?
+              Why Choose ORPHIC ART REVOLUTION for Design?
             </h2>
             <p className="text-lg text-surface-600 max-w-3xl mx-auto">
               Our commitment to excellence, transparent processes, and customer satisfaction sets us apart in the construction industry.
@@ -521,7 +521,7 @@ const Construction = () => {
                       hoverEffect={true}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-4 left-4 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="bg-brand-primary px-2 py-1 rounded-full text-xs font-bold mb-2 inline-block">
                         {project.type}
                       </div>
@@ -568,7 +568,7 @@ const Construction = () => {
       />
 
       {/* Call to Action */}
-      <section className="section bg-gradient-to-r from-brand-primary via-brand-primaryDark to-brand-steel text-white relative overflow-hidden">
+      <section className="section bg-gradient-to-r from-brand-primary via-brand-primaryDark to-brand-steel text-black relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 right-10 w-32 h-32 bg-white/5 rounded-full blur-3xl"></div>
@@ -603,7 +603,7 @@ const Construction = () => {
                 variant="outline"
                 size="lg"
                 icon={Download}
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                className="border-black/30 text-black hover:bg-black/10 backdrop-blur-sm"
               >
                 Download Price Guide
               </Button>
@@ -612,7 +612,7 @@ const Construction = () => {
                 variant="outline"
                 size="lg"
                 icon={MessageCircle}
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                className="border-black/30 text-black hover:bg-black/10 backdrop-blur-sm"
               >
                 WhatsApp Consultation
               </Button>

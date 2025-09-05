@@ -92,7 +92,7 @@ const PageHeader = ({
             {/* Title */}
             <motion.h1 
               variants={staggerItem}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-surface-900 leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-mono font-bold text-surface-900 leading-[1.1] tracking-tight"
             >
               {title}
             </motion.h1>
@@ -101,7 +101,7 @@ const PageHeader = ({
             {description && (
               <motion.p 
                 variants={staggerItem}
-                className="text-lg md:text-xl text-surface-600 leading-relaxed max-w-3xl mx-auto"
+                className="text-gray-700 text-lg md:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto font-light"
               >
                 {description}
               </motion.p>

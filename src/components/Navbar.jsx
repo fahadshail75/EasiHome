@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, ChevronDown, Home, Building2, Hammer, Palette, Paintbrush2, Package, Users, MapPin, Mail } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, Home, Building2, Hammer, Palette, Paintbrush2, Package, Users, MapPin, Mail, Box, Film, BadgeCheck, Cog, Image } from 'lucide-react';
 import { NAVIGATION, COMPANY_INFO, SERVICES } from '../utils/constants';
 import { cn } from '../utils/cn';
 import Button from './Button';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,20 +83,11 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <Link to="/" className="flex items-center group">
-              <div className="relative">
-                <div className={cn('bg-gradient-to-br from-brand-primary to-brand-primaryDark rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300', isScrolled ? 'w-10 h-10' : 'w-12 h-12')}>
-                  <Home size={24} className="text-white" />
-                </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-brand-yellow rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-                </div>
-              </div>
-              <div className="ml-3">
-                <div className="text-2xl font-heading font-bold text-brand-primary group-hover:text-brand-primaryDark transition-colors">
-                  EasiHome
-                </div>
-                <div className="text-xs text-surface-500 -mt-1">Construction & Design</div>
-              </div>
+              <Logo 
+                variant="header" 
+                size={isScrolled ? 'sm' : 'md'}
+                className="hover:scale-105 transition-transform duration-300"
+              />
             </Link>
           </motion.div>
 
@@ -146,12 +138,13 @@ const Navbar = () => {
                   >
                     <div className="grid grid-cols-2 gap-2">
                       {serviceItems.map((service) => {
-                        const IconComponent = service.icon === 'Building2' ? Building2 :
-                                            service.icon === 'Hammer' ? Hammer :
+                        const IconComponent = service.icon === 'Cube' ? Cube :
+                                            service.icon === 'Film' ? Film :
+                                            service.icon === 'BadgeCheck' ? BadgeCheck :
+                                            service.icon === 'Cog' ? Cog :
+                                            service.icon === 'Image' ? Image :
                                             service.icon === 'Palette' ? Palette :
-                                            service.icon === 'Paintbrush2' ? Paintbrush2 :
-                                            service.icon === 'Package' ? Package :
-                                            service.icon === 'Users' ? Users : Building2;
+                                            Building2;
 
                         return (
                           <Link
@@ -225,7 +218,7 @@ const Navbar = () => {
             <Button
               variant="primary"
               size="md"
-              className="shadow-lg hover:shadow-xl"
+              className=""
               onClick={() => window.open(`tel:${COMPANY_INFO.phone}`, '_self')}
             >
               Free Consultation

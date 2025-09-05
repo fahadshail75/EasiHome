@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { staggerContainer, staggerItem, viewportAnimation } from '../utils/animations';
 import { PROCESS_STEPS } from '../utils/constants';
 
-const ProcessSteps = ({ 
+const ProcessSteps = ({
   title = "How It Works",
-  subtitle = "Our streamlined process ensures your project is delivered on time and within budget",
+  subtitle = "Our proven interior design process ensures exceptional results from concept to completion",
   steps = PROCESS_STEPS,
   className = ""
 }) => {
@@ -16,10 +16,10 @@ const ProcessSteps = ({
           {...viewportAnimation}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-surface-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold text-surface-900 mb-6">
             {title}
           </h2>
-          <p className="text-lg text-surface-600 max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </motion.div>

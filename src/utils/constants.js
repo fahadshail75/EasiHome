@@ -1,20 +1,20 @@
 // App constants and configuration
 
 export const COMPANY_INFO = {
-  name: "EasiHome",
-  tagline: "Tech-enabled Construction & Home Services",
-  description: "Construction, renovation, interior design, painting services & purchase of building materials in Lucknow.",
-  phone: "+91 894 894 5757",
-  email: "care@easihome.in",
-  whatsapp: "+91 894 894 5757",
+  name: "ORPHIC ART REVOLUTION PRIVATE LIMITED",
+  tagline: "Revolutionizing Spaces with Art & Design",
+  description: "Transforming spaces with innovative layouts, colour harmonies, furniture, and design technologies. We specialize in creating functional yet artistic interiors through comprehensive design solutions.",
+  phone: "+91 9696100912",
+  email: "orphicartrevolution@gmail.com",
+  whatsapp: "+91 9696100912",
   address: {
-    street: "Navachar Incubation Center Faculty of Architectural and Planning",
-    area: "Tagore Marg, C.S.I.R. Colony, Mukarimnagar, Hasanganj",
+    street: "466140 Peer Bukhara",
+    area: "Chowk",
     city: "Lucknow",
     state: "Uttar Pradesh",
-    pincode: "226007",
+    pincode: "226003",
     country: "India",
-    full: "Navachar Incubation Center Faculty of Architectural and Planning Tagore Marg, C.S.I.R. Colony, Mukarimnagar, Hasanganj, Lucknow, Uttar Pradesh 226007"
+    full: "466140 Peer Bukhara, Chowk, Lucknow, Uttar Pradesh – 226003"
   },
   businessHours: {
     weekdays: "9:00 AM - 7:00 PM",
@@ -22,10 +22,10 @@ export const COMPANY_INFO = {
     sunday: "10:00 AM - 4:00 PM"
   },
   social: {
-    facebook: "https://facebook.com/easihome",
-    instagram: "https://instagram.com/easihome",
-    twitter: "https://twitter.com/easihome",
-    linkedin: "https://linkedin.com/company/easihome"
+    facebook: "#",
+    instagram: "#",
+    twitter: "#",
+    linkedin: "#"
   },
   stats: {
     projectsCompleted: "500+",
@@ -37,48 +37,46 @@ export const COMPANY_INFO = {
 
 export const SERVICES = [
   {
-    id: "construction",
-    name: "Construction",
-    description: "Complete home construction with tech-enabled project management",
-    icon: "Building2",
-    href: "/construction",
-    discount: "Up to 18% Off"
-  },
-  {
-    id: "renovation",
-    name: "Renovation",
-    description: "Transform your existing space with modern design solutions",
-    icon: "Hammer",
-    href: "/renovation"
-  },
-  {
-    id: "interior-design",
-    name: "Interior Design",
-    description: "Creating excellent interiors with professional design expertise",
+    id: "interior-design-styling",
+    name: "Interior Design & Styling",
+    description: "Comprehensive interior design solutions including concept development, furniture layouts, colour consultation, accessories & décor, and space optimization.",
     icon: "Palette",
-    href: "/interior-design",
-    discount: "Up to 12% Off"
+    href: "/interior-design"
   },
   {
-    id: "painting",
-    name: "Painting",
-    description: "Professional painting services with premium quality materials",
-    icon: "Paintbrush2",
-    href: "/painting"
+    id: "space-planning",
+    name: "Space Planning",
+    description: "Expert space planning and concept development, custom millwork & cabinetry, lighting design, and window treatments for optimal functionality.",
+    icon: "Layout",
+    href: "/interior-design"
   },
   {
-    id: "building-material",
-    name: "Building Material",
-    description: "Quality construction materials from trusted suppliers",
-    icon: "Package",
-    href: "/building-material"
+    id: "design-visualizations",
+    name: "Design Visualizations",
+    description: "Professional floor plans, elevations & sections, 3D modelling & rendering, and virtual tours to bring your vision to life.",
+    icon: "Box",
+    href: "/interior-design"
   },
   {
-    id: "service-provider",
-    name: "Service Provider",
-    description: "Connect with verified professionals for your projects",
-    icon: "Users",
-    href: "/service-provider"
+    id: "project-management",
+    name: "Project Management",
+    description: "End-to-end project management including vendor & contractor coordination, budget & timeline oversight, and quality execution.",
+    icon: "Settings",
+    href: "/interior-design"
+  },
+  {
+    id: "colour-material-consultation",
+    name: "Colour & Material Consultation",
+    description: "Expert guidance on colour schemes, material selection, and finishes to create harmonious and functional spaces.",
+    icon: "Palette",
+    href: "/interior-design"
+  },
+  {
+    id: "lighting-design",
+    name: "Lighting Design & Custom Cabinetry",
+    description: "Specialized lighting design solutions and custom cabinetry to enhance ambiance and maximize storage efficiency.",
+    icon: "Lightbulb",
+    href: "/interior-design"
   }
 ];
 
@@ -87,14 +85,12 @@ export const CITIES = [
 ];
 
 export const WORK_TYPES = [
-  "Construction",
-  "Renovation",
-  "Interior Design",
-  "Painting",
-  "Material Financing",
-  "Building Materials",
-  "Electrical Work",
-  "Plumbing",
+  "Interior Design & Styling",
+  "Space Planning",
+  "Design Visualizations",
+  "Project Management",
+  "Colour & Material Consultation",
+  "Lighting Design & Custom Cabinetry",
   "Other"
 ];
 
@@ -125,22 +121,39 @@ export const PROCESS_STEPS = [
   {
     step: 1,
     title: "Discover",
-    description: "Free consultation to understand your requirements and vision"
+    description: "Free consultation to understand your requirements and creative vision"
   },
   {
     step: 2,
-    title: "Plan",
-    description: "Detailed planning with 3D designs and transparent cost breakdown"
+    title: "Design",
+    description: "Concept development with 3D visualization and detailed planning"
   },
   {
     step: 3,
-    title: "Build",
-    description: "Expert execution with real-time updates and quality checkpoints"
+    title: "Create",
+    description: "Expert execution with regular reviews and quality checkpoints"
   },
   {
     step: 4,
-    title: "Handover",
-    description: "Final inspection and handover with warranty and support"
+    title: "Deliver",
+    description: "Final delivery with all assets and post-project support"
+  }
+];
+
+export const FOUNDERS = [
+  {
+    id: 1,
+    name: "Mrs. Shaista",
+    role: "Director & Lead Designer",
+    description: "An experienced interior design professional specializing in transforming spaces with innovative layouts, colour harmonies, furniture, and design technologies. Passionate about creating functional yet artistic interiors.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
+  },
+  {
+    id: 2,
+    name: "Mr. Anas Aqeel Siddique",
+    role: "Director",
+    description: "Co-founder and strategic leader, supporting the company's vision of revolutionizing art-driven design solutions.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
   }
 ];
 
@@ -150,7 +163,7 @@ export const TESTIMONIALS = [
     name: "Rajesh Kumar",
     location: "Gomti Nagar, Lucknow",
     rating: 5,
-    text: "EasiHome transformed our dream home into reality. The team was professional, transparent, and delivered exactly what they promised.",
+    text: "ORPHIC ART REVOLUTION transformed our dream home into reality. The team was professional, transparent, and delivered exactly what they promised.",
     project: "3BHK Construction"
   },
   {
@@ -173,13 +186,8 @@ export const TESTIMONIALS = [
 
 export const NAVIGATION = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Construction", href: "/construction" },
-  { name: "Renovation", href: "/renovation" },
+  { name: "About", href: "/about" },
   { name: "Interior Design", href: "/interior-design" },
-  { name: "Painting", href: "/painting" },
-  { name: "Building Material", href: "/building-material" },
   { name: "Service Provider", href: "/service-provider" },
-  { name: "Buy & Sale Plot", href: "/buy-sale-plot" },
-  { name: "Contact Us", href: "/contact" }
+  { name: "Contact", href: "/contact" }
 ];
